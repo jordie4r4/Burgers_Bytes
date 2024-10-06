@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+    --primary: #FFD700;
+    --white: #ffffff;
+    --bg: #000000;
+    --text-color: #ffffff;
+    --card-bg: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+header {
+    background-color: var(--bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary);
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--primary);
+}
+
+.container {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: var(--primary);
+    padding: 2rem 0;
+}
+
+#tranding {
+    padding: 4rem 0;
+}
+
+#tranding .tranding-slider {
+    height: auto;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.tranding-slide {
+    width: 37rem;
+    height: 42rem;
+    position: relative;
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.tranding-slide-content .food-price {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+    color: var(--white);
+}
+
+.food-rating {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.rating ion-icon {
+    color: var(--primary);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets,
+.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -7px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #DB241B;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: space-between; 
+    margin: 2rem 0;
+    gap: 2rem; 
+}
+
+.cta-item {
+    text-align: center;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    flex: 1; 
+    max-width: calc(33.33% - 1.33rem); 
+}
+
+.cta-item:hover {
+    transform: translateY(-5px);
+}
+
+.cta-item h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.cta-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.suggestions {
+    padding: 2rem;
+}
+
+.suggestions h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.suggestion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.suggestion-item {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.suggestion-item:hover {
+    transform: scale(1.05);
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.suggestion-item h3 {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--card-bg);
+    color: #CCCCCC;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+img.i1 {
+    width: 175px; 
+    height: 150px;
+}
+
+img.i2  {
+    width: 40px; 
+    height: 40px;
+}
+
+.encuentranos-section {
+    padding: 2rem;
+}
+
+.location-finder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.ver-mas-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--bg);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mas-btn:hover {
+    background-color: #e6c200;
+}
+
+#location-input {
+    width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 4px 0 0 4px;
+}
+
+#search-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: var(--bg);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#map-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#map-iframe {
+    border: none;
+}
+
+.map-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.map-controls button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product-section {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.product-section .product-name {
+    color: #000;
+}
+
+.product-section .product-description {
+    color: #333;
+}
+
+.product-section .back-to-menu {
+    color: #666;
+}
+
+.product-section .order-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.product-section .order-button:hover {
+    background-color: #128C7E;
+}
+
+.product-section .order-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .tranding-slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-item {
+        max-width: 100%;
+    }
+
+    .suggestion-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    img.i1 {
+        width: 200px;
+        height: auto;
+    }
+
+    .encuentranos-section {
+        padding: 1rem;
+    }
+
+    .location-finder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #location-input, #search-btn {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+
+    #map-container {
+        height: 300px;
+    }
+
+    .product-section {
+        padding: 1rem;
+    }
+
+    .product-section .order-buttons {
+        flex-direction: column;
+    }
+
+    .product-section .order-button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
